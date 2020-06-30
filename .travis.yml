@@ -8,6 +8,7 @@ before_install:
 script:
   - docker run -e CI=true elenakves/docker-react npm run test -- --coverage
 
+language: generic
 deploy:
   provider: elasticbeanstalk
   region: "eu-west-1"
